@@ -54,5 +54,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-print("DATABASE_URL =", settings.DATABASE_URL)
-print("OPENAI_API_KEY =", settings.OPENAI_API_KEY)
