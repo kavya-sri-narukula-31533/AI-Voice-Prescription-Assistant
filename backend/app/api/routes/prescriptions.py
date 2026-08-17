@@ -73,7 +73,7 @@ async def transcribe_audio(
     result = await speech_service.transcribe_audio(
     audio_bytes,
     language,
-    use_local=False
+    use_local=True
 )
 
     return result
