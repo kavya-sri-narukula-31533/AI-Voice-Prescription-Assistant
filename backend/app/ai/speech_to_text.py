@@ -43,7 +43,7 @@ class SpeechToTextService:
         try:
             from openai import AsyncOpenAI
 
-            print("OPENAI KEY:", settings.OPENAI_API_KEY[:20])
+            
             
             client = AsyncOpenAI(api_key=settings.OPENAI_API_KEY)
             audio_file = io.BytesIO(audio_bytes)
