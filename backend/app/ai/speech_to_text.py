@@ -75,7 +75,7 @@ class SpeechToTextService:
             import os
             from faster_whisper import WhisperModel
 
-            model = WhisperModel("small", device="cpu", compute_type="int8")
+            model = WhisperModel("tiny", device="cpu", compute_type="int8")
 
             with tempfile.NamedTemporaryFile(suffix=".webm", delete=False) as tmp:
                 tmp.write(audio_bytes)
